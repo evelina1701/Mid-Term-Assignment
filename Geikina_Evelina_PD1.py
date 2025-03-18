@@ -10,7 +10,7 @@ import numpy as np
 # Funkcija pieņem masīvu ar vismaz diviem elementiem.
 # Ja masīvs ir sakārtots dilstoši, rezultāts būs negatīvs.
 # Ja visi elementi ir vienādi, funkcija atgriež 0.
-# Kodu veidoja Swetank Modi.
+
 
 # Algorithm Complexity = O(n)
 
