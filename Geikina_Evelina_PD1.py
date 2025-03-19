@@ -12,7 +12,15 @@ import numpy as np
 # Ja visi elementi ir vienādi, funkcija atgriež 0.
 
 
+# Paskaidrojums par Algorithm Complexity:
 # Algorithm Complexity = O(n)
+# Sākotnējo mainīgo iestatīšana aizņem O(1) laiku
+# Kad cikls iet cauri masīvam, tas izpildās n-1 reizes, jo skaitīšana sākas ar 1 un beidzas ar array_size-1
+# Katrā iterācijā notiek tikai divas salīdzināšanas operācijas un iespējama vērtību piešķiršana, kas aizņem O(1) laiku
+# Tā kā šīs operācijas tiek veiktas visām n masīva vērtībām, izņemot pirmo, kopējā sarežģītība ir O(n)
+
+# Algoritmam nav cita Algorithm Complexity, jo nav iekšējā cikla (tāpēc arī nav O(n^2))
+# Tāpat kodā nav arī šķirošanas vai meklēšanas algoritma, kas palielinātu Algorithm Complexity līdz O(log n) vai O(n log n)
 
 def MaxDifference(array, array_size):
     # Funkcija sākotnēji pieņem, ka maksimālā starpība ir pirmo divu elementu starpība.
